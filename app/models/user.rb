@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  validates_length_of :name, in: 3..36
+  validates :name, format: { with: /[a-zA-Z0-9]+\@[a-zA-Z0-9]+.edu\z/,
+    message: "only allows letters" }
 end
