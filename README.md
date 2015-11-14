@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RailsSchool Starter App
 
 This is provided as a quick way to get up and running with rails. In
@@ -64,3 +65,7 @@ codebase. For example,
     ```
 
 1. If everything went well, navigate to [localhost:3000](http://localhost:3000)
+=======
+# Hoober
+hoober hacking
+>>>>>>> c3d3b97a6af8df67bc1adb04f2dc64cf465406ce

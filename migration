@@ -2098,4 +2098,75 @@ Exiting
 ]2;cd --]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~]1;~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=ccd code[?1l>
 ]2;cd code]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code]1;~/code[0m[27m[24m[J[01;32m➜ [01;32m [36mcode [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit clone i github.ciom           https:..  //             remote set-su  url origin https://gitu hub.com.mmezher        /mmeh zher/JH  Hoober[?1l>
 ]2;git remote set-url origin https://github.com/mmezher/Hoober]1;gitfatal: No such remote 'origin'
-[1m[7m%[27m[1m[0m                                                                                                                                                 
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code]1;~/code[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mcode [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit remote        g  ccd starter[?1l>
+]2;cd starter]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;32m➜ [01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=cd starter[10Dgit remote set-url origin https://github.com/mmezher/Hoober[?1l>
+]2;git remote set-url origin https://github.com/mmezher/Hoober]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;32m➜ [01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit remote -b[?1l>
+]2;git remote -b]1;giterror: unknown switch `b'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags|--no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete |<branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit rm emove   te v -v[?1l>
+]2;git remote -v]1;gitorigin	https://github.com/mmezher/Hoober (fetch)
+origin	https://github.com/mmezher/Hoober (push)
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;32m➜ [01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit commi     add -- all[?1l>
+]2;git add --all]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;32m➜ [01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit commit "Mac joins the projet ct"-"Mac joins the project"[23Dm"Mac joins the project"[23D "Mac joins the project"[23D[?1l>
+]2;git commit -m "Mac joins the project"]1;git[master e07f4a9] Mac joins the project
+ 30 files changed, 4216 insertions(+), 278 deletions(-)
+ create mode 100644 db/migrate/20151114214921_posts.rb
+ create mode 100644 generate
+ create mode 100644 migration
+ delete mode 100644 test/controllers/.keep
+ delete mode 100644 test/controllers/data_controller_test.rb
+ delete mode 100644 test/controllers/posts_controller_test.rb
+ delete mode 100644 test/controllers/tasks_controller_test.rb
+ delete mode 100644 test/controllers/users_controller_test.rb
+ delete mode 100644 test/fixtures/.keep
+ delete mode 100644 test/fixtures/data.yml
+ delete mode 100644 test/fixtures/posts.yml
+ delete mode 100644 test/fixtures/tasks.yml
+ delete mode 100644 test/fixtures/users.yml
+ delete mode 100644 test/helpers/.keep
+ delete mode 100644 test/integration/.keep
+ delete mode 100644 test/mailers/.keep
+ delete mode 100644 test/models/.keep
+ delete mode 100644 test/models/datum_test.rb
+ delete mode 100644 test/models/post_test.rb
+ delete mode 100644 test/models/task_test.rb
+ delete mode 100644 test/models/user_test.rb
+ delete mode 100644 test/test_helper.rb
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;32m➜ [01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit push[?1l>
+]2;git push]1;gitUsername for 'https://github.com': macsochor
+Password for 'https://macsochor@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/mmezher/Hoober/'
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit push[?1l>
+]2;git push]1;gitmUsername for 'https://github.com': acsochor         ms acsochor
+Password for 'https://macsochor@github.com': 
+remote: Permission to mmezher/Hoober.git denied to macsochor.
+fatal: unable to access 'https://github.com/mmezher/Hoober/': The requested URL returned error: 403
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit push[?1l>
+]2;git push]1;gitUsername for 'https://github.com': macsochor
+Password for 'https://macsochor@github.com': 
+To https://github.com/mmezher/Hoober
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mmezher/Hoober'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@ruby-on-rails-142871: ~/code/starter]1;~/code/starter[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mstarter [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ggit pull[?1l>
+]2;git pull]1;gitremote: Counting objects: 29, done.[K
+remote: Compressing objects:   4% (1/24)   [Kremote: Compressing objects:   8% (2/24)   [Kremote: Compressing objects:  12% (3/24)   [Kremote: Compressing objects:  16% (4/24)   [Kremote: Compressing objects:  20% (5/24)   [Kremote: Compressing objects:  25% (6/24)   [Kremote: Compressing objects:  29% (7/24)   [Kremote: Compressing objects:  33% (8/24)   [Kremote: Compressing objects:  37% (9/24)   [Kremote: Compressing objects:  41% (1
