@@ -16,6 +16,10 @@
 
   <dt>Deadline:</dt>
   <dd><%= @post.deadline%><dd>
+  
+  <dt># of Seats</dt>
+  <dd><%= @post.seats%><dd>
+  
   <dt>Image:</dt>
   <dd><%= image_tag attachment_url(@post, :image, :fill, 300, 300, format: "png") %></dd>
 
