@@ -26,10 +26,9 @@
             <td><%= post.seats %></td>
             <td><%= post.place %></td>
             <td><%= post.created_at %></td>
-            <td><%= image_tag attachment_url(post, :image, :fill, 64, 64, format: "png") %></td>
             <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_post_path(post) %></td>
+            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     </tbody>
   </table>
