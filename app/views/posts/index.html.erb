@@ -13,9 +13,8 @@
             <th>User</th>
             <th>Date</th>
             <th>Seats</th>
-            <th>Image</th>
-            <th></th>
-        <th></th>
+            <th>Destination</th>
+            <th>Created at</th>
         <th></th>
       </tr>
     </thead>
@@ -23,6 +22,10 @@
     <tbody>
       <%= content_tag_for(:tr, @posts) do |post| %>
             <td><%= post.user.name %></td>
+            <td><%= post.deadline %></td>
+            <td><%= post.seats %></td>
+            <td><%= post.destination %></td>
+            <td><%=post.created_at %></td>
             <td><%= image_tag attachment_url(post, :image, :fill, 64, 64, format: "png") %></td>
             <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>

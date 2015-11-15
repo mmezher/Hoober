@@ -14,13 +14,16 @@
   <dt>User:</dt>
   <dd><%= @post.user.name %></dd>
 
-  <dt>Deadline:</dt>
+  <dt>Date of departure</dt>
   <dd><%= @post.deadline%><dd>
-  
+
   <dt># of Seats</dt>
-  <dd><%= @post.seats%><dd>
+  <dd><%= @post.seats%></dd>
+
+  <dt>Destination</dt>
+  <dd><%= @post.destination%></dd>
   
-  <dt>Image:</dt>
-  <dd><%= image_tag attachment_url(@post, :image, :fill, 300, 300, format: "png") %></dd>
+  <dt>Created at</dt>
+  <dd><%= @post.created_at%></dd>
 
 </dl>
