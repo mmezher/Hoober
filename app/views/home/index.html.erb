@@ -10,6 +10,7 @@
       <center>In order to see posts and post yourself, you must be a student! </center>
     </p>
     <p>
+
      <center> Please go <%= link_to "Register Your .edu Email", new_user_path, class:
       "btn btn-primary btn-xs" %> first,
        if you haven't done so already. </center>
@@ -19,22 +20,8 @@
 
     </p>
     <p> <center> After doing so, then you can
-      <%= link_to "See Student's Posts", posts_path, class: "btn btn-primary" %> and go find a ride! </center> </p>
+      <%= link_to "See Student's Posts", posts_path, class: "btn btn-primary btn-xs" %> and go find a ride! </center> </p>
   </div>
 </div>
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Resources</h3>
-  </div>
-  <div class="panel-body">
-    <ul>
-      <li><%= link_to "Bootstrap Components Reference",
-      "http://getbootstrap.com/components" %></li>
-      <li><%= link_to "Bootstrap CSS Reference",
-      "http://getbootstrap.com/css" %></li>
-      <li><%= link_to "This code on GitHub",
-      "https://github.com/rails-school/starter" %></li>
-    </ul>
-  </div>
-</div>
+
