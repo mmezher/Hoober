@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151115001447) do
+ActiveRecord::Schema.define(version: 20151115013738) do
 
   create_table "data", force: :cascade do |t|
     t.integer  "user_id"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20151115001447) do
     t.integer  "seats"
     t.string   "destination"
     t.datetime "deadline"
+    t.string   "place"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
