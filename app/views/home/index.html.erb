@@ -1,6 +1,7 @@
 <div class="jumbotron">
-  <h1>Hello, RailsSchool!</h1>
-  <p>This is a starter app. See <code>app/views/layouts/application.html.erb</code> for the site layout, and <code>app/views/home/index.html.erb</code> for this text.</p>
+  <h1>Welcome to Hoober</h1>
+  <p> See <code>app/views/layouts/application.html.erb</code> for the site layout, and <code>app/views/home/index.html.erb</code> for this text.
+  For our purposes, we will keep this here for now.</p>
 </div>
 
 <div class="panel panel-info">
@@ -13,15 +14,13 @@
       explore some rails code.
     </p>
     <p>
-      First, there's a very
-      simple <code>User</code> model.
-      Why not go <%= link_to "Create a User", new_user_path, class:
+      Please go <%= link_to "Register Your .edu Email", new_user_path, class:
       "btn btn-primary btn-xs" %> first,
       if you haven't done so already.
     </p>
     <p>
-      Next, we created a <code>Task</code> resource to represent an
-      item in a todo list.
+      Can I put an image here?
+      <%= image_tag 'https://scontent-iad3-1.xx.fbcdn.net/hphotos-xpf1/v/t34.0-12/12243606_10203878319353042_1832629326_n.jpg?oh=18df485bc8f0a6a8890fb8975770e269&oe=564A623B' %>
     </p>
     <%= link_to "See Tasks", tasks_path, class: "btn btn-primary" %>
   </div>
