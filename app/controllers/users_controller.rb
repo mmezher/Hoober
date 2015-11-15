@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to "/posts", notice: 'Email was confirmed.' }
+        format.html { redirect_to "/pages/success", notice: 'Email was confirmed.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
