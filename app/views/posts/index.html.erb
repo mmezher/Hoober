@@ -1,5 +1,6 @@
+
 <center>
-    <h1>Hoo's going places?</h1>
+  <h1><font color="orange">Hoo's </font> going places?</h1>
 <div class="page-header">
   <%= link_to new_post_path, :class => 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-plus"></span>
@@ -11,13 +12,15 @@
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-            <th>User</th>
-            <th>Date</th>
-            <th>Seats</th>
+            <th>Student Contact Info</th>
+            <th>Date of Departure</th>
+            <th>Seats Available</th>
             <th>From</th>
             <th>To</th>
             <th>Post date</th>
-            <th>Notes</th>
+            <th>Riding or Driving</th>
+        <th></th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
@@ -33,7 +36,7 @@
             <td><%= post.notes  %></td>
             <td><%= link_to 'Show', post %></td>
             <td><%= link_to 'Edit', edit_post_path(post) %></td>
-            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     </tbody>
   </table>

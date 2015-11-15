@@ -1,4 +1,6 @@
+
 <div class="page-header">
+  
   <%= link_to posts_path, :class => 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
     Back
@@ -7,29 +9,29 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1>Show post</h1>
+  <h1><font color="orange">Hoo's </font>Going Where</h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>User:</dt>
+  <dt>Student Contact Info: </dt>
   <dd><%= @post.user.name %></dd>
 
-  <dt>Date of departure</dt>
+  <dt>Date of Departure: </dt>
   <dd><%= @post.deadline%><dd>
 
-  <dt># of Seats</dt>
+  <dt># of Seats :</dt>
   <dd><%= @post.seats%></dd>
 
-  <dt>From</dt>
+  <dt>From: </dt>
   <dd><%= @post.from%></dd>
 
-  <dt>To</dt>
+  <dt>To: </dt>
   <dd><%= @post.to%></dd>
 
-  <dt>Created at</dt>
+  <dt>Created at: </dt>
   <dd><%= @post.created_at%></dd>
 
-  <dt>Notes</dt>
+  <dt>Notes: </dt>
   <dd><%= @post.notes%></dd>
 
 </dl>
