@@ -25,10 +25,9 @@ ActiveRecord::Schema.define(version: 20151115001447) do
   create_table "posts", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "image_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer  "seats"
-    t.string   "destination"
     t.datetime "deadline"
   end
 
