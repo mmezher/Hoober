@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'Email was confirmed.' }
+        format.html { redirect_to "/posts", notice: 'Email was confirmed.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'Welcome to the family.' }
+        format.html { redirect_to @user, notice: 'Email was updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'pages/success'
+
   resources :data
   resources :posts
   resources :tasks
