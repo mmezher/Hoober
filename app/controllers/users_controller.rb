@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'Email was updated.' }
+        format.html { redirect_to @user, notice: 'Welcome to the family.' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
