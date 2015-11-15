@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 0) do
-=======
-ActiveRecord::Schema.define(version: 20151115013738) do
+ActiveRecord::Schema.define(version: 20151115031152) do
 
   create_table "data", force: :cascade do |t|
     t.integer  "user_id"
@@ -34,6 +31,9 @@ ActiveRecord::Schema.define(version: 20151115013738) do
     t.string   "destination"
     t.datetime "deadline"
     t.string   "place"
+    t.string   "notes"
+    t.string   "to"
+    t.string   "from"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
@@ -56,6 +56,5 @@ ActiveRecord::Schema.define(version: 20151115013738) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
->>>>>>> 38d61f8c37e0854432070926bc3801ddb337476b
 
 end

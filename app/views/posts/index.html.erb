@@ -14,8 +14,10 @@
             <th>User</th>
             <th>Date</th>
             <th>Seats</th>
-            <th>Place</th>
-            <th>Created at</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Post date</th>
+            <th>Notes</th>
         <th></th>
       </tr>
     </thead>
@@ -25,8 +27,10 @@
             <td><%= post.user.name %></td>
             <td><%= post.deadline %></td>
             <td><%= post.seats %></td>
-            <td><%= post.place %></td>
+            <td><%= post.from %></td>
+            <td><%= post.to %></td>
             <td><%= post.created_at %></td>
+            <td><%= post.notes  %></td>
             <td><%= link_to 'Show', post %></td>
             <td><%= link_to 'Edit', edit_post_path(post) %></td>
             <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
