@@ -2,7 +2,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.association :user %>
+    
     <%= f.input :from, required:true %>
     <%= f.input :to, required:true%>
     <%= f.input :departure_date, as: :date, required:true %>

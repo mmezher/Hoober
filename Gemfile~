@@ -18,8 +18,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass'
 gem 'simple_form'
 
-gem 'websocket-rails'
-
 gem 'refile', require: 'refile/rails'
 gem 'refile-mini_magick'
 

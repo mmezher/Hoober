@@ -16,10 +16,10 @@
             <th>From</th>
             <th>To</th>
             <th>Departing</th>
-            <th>Seats</th>
-            <th>Riding/Driving</th>
+            <th>Seats Available or Needed</th>
+            <th>From</th>
             <th>Posted</th>
-            <th>Notes</th>
+            <th>Riding or Driving</th>
         <th></th>
         <th></th>
         
@@ -28,9 +28,9 @@
 
     <tbody>
       <%= content_tag_for(:tr, @posts) do |post| %>
-            <td><%= post.from %></td>
-            <td><%= post.to %></td>
+            <td><%= post.user.name %></td>
             <td><%= post.deadline %></td>
+            <td><%= post.seats %></td>
             <td><%= post.from %></td>
             <td><%= post.to %></td>
             <td><%= post.created_at %></td>
